@@ -1,0 +1,98 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@keyframes fadeIn {
+  0%{
+      opacity: 0;
+  }
+  100%{
+      opacity: 1;
+  }
+  
+}
+
+.screen-container{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  transition: 0.8s ease;
+}
+
+
+h1{
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  animation: fadeIn 3s;
+}
+
+h2, a{
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  color: black;
+}
+
+h2{
+  animation: fadeIn 4s;
+}
+
+h3{
+  font-weight: 100;
+  font-size: 12px;
+}
+
+#quote-box{
+  border-radius: 16px;
+  width: 450px;
+  height: auto;
+  clear: both;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  background-color: white;
+}
+
+.quote{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-end;
+}
+
+.buttons{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.socials{
+  display: flex;
+  gap: 8px;
+}
+
+.btn{
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  transition: background-color 0.3s ease;
+  border: none;
+  font-size: 18px;
+  font-weight: 400;
+  cursor: pointer;
+}
